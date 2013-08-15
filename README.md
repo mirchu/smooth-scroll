@@ -1,8 +1,16 @@
 # Smooth Scroll
 A simple jQuery script to animate scrolling to anchor links. Script by [Charlie Evans](http://www.sycha.com/jquery-smooth-scrolling-internal-anchor-links).
 
+
 ## How It Works
-Getting started with Smooth Scroll is really easy. [View the online tutorial](http://cferdinandi.github.com/smooth-scroll/) or dig through the `index.html` file.
+1. Include the `smooth-scroll.js` file on your site.
+2. Add the `.scroll` class to your anchor links.
+3. Give the anchor location an ID just like your normally would.
+
+For browsers that don't support JavaScript, anchor links work as they normally would. Browsers that support JavaScript will get an animated scroll.
+
+Smooth Scroll works in all modern browsers and IE 6 and above. It also requires [jQuery](http://jquery.com/).
+
 
 ## Changelog
 * v1.1 (June 7, 2013)
