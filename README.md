@@ -9,7 +9,7 @@ A simple jQuery script to animate scrolling to anchor links. Script by [Charlie 
 
 For browsers that don't support JavaScript, anchor links work as they normally would. Browsers that support JavaScript will get an animated scroll.
 
-Smooth Scroll works in all modern browsers and IE 6 and above. It also requires [jQuery](http://jquery.com/).
+Smooth Scroll works in all modern browsers and IE 6 and above. It also requires [jQuery 1.2.6 or higher](http://jquery.com/).
 
 
 ## Changelog
