@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Waqas Hussain">
+<link rel="icon" href="assets/icon/favicon.ico">
+<title>Material Design Smooth Scroll | Mirchu</title>
+<link rel="stylesheet" href="assets/plugins/bootstrap-3.3.1/css/bootstrap.min.css" type='text/css'>
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="assets/css/flaticon.css" type="text/css">
+<link rel="stylesheet" href="assets/css/style.css" type="text/css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+          <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+ 
+    <meta name="description" content="Material Design Smooth Scroll Performs a Smooth page Scroll to an anchor on the Same Page. To quickly and smoothly scroll the page to the destination content, but take a short time to do so."/>
+    <meta name="keywords" content="smooth scroll, jquery scrolling, smooth jquery plugin, material design scrolling, jquery plugin, scrolling plugin"/>
+    <link rel="canonical" href="http://www.mirchu.net/material-design-smooth-scroll/" />
+    <link rel="publisher" href="https://plus.google.com/+MirchuNet"/>
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Material Design Smooth Scroll | Mirchu" />
+    <meta property="og:description" content="Material Design Smooth Scroll Performs a Smooth page Scroll to an anchor on the Same Page. To quickly and smoothly scroll the page to the destination content, but take a short time to do so." />
+    <meta property="og:url" content="http://www.mirchu.net/material-design-smooth-scroll/" />
+    <meta property="og:site_name" content="Mirchu | One Place for Web and Technology | News and Updates" />
+    <meta property="article:publisher" content="https://www.facebook.com/mirchu.net" />
+    <meta property="article:section" content="smooth-scroll" />
+    <meta property="article:published_time" content="2015-04-17T22:54:52+00:00" />
+    <meta property="og:image" content="http://www.mirchu.net/material-design-smooth-scroll/assets/images/material-design-smooth-scroll.jpg" />
+    <meta itemprop="name" content="Material Design Smooth Scroll | Mirchu">
+    <meta itemprop="description" content="Material Design Smooth Scroll Performs a Smooth page Scroll to an anchor on the Same Page. Nowadays mostly front-end developer make a landing page templates they need smooth scroll on page.">
+    <meta itemprop="image" content="http://www.mirchu.net/material-design-smooth-scroll/assets/images/material-design-smooth-scroll.jpg">
+
+   
+</head>
+<body>
+<!-- Preloader -->
+
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<nav class="navbar navbar-fixed-top main-menu" id="top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" data-scroll data-options='{ "easing": "linear" }' href="#top"><i class="flaticon-vertical"></i><span>Material Design</span> Smooth Scroll</a> </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav pull-right">
+        <li class="active"><a href="#getstarted" data-scroll data-options='{ "easing": "linear" }'>Getting started</a></li>
+        <li class=""><a href="#linear" data-scroll data-options='{ "easing": "linear" }'>Linear</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ease-In <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#ease-in-quad" data-scroll data-options='{ "easing": "easeInQuad" }'>Quad</a></li>
+            <li><a href="#ease-in-cubic" data-scroll data-options='{ "easing": "easeInCubic" }'>Cubic</a></li>
+            <li><a href="#ease-in-quart" data-scroll data-options='{ "easing": "easeInQuart" }'>Quart</a></li>
+            <li><a href="#ease-in-quint" data-scroll data-options='{ "easing": "easeInQuint" }'>Quint</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ease-In-Out <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#ease-in-out-quad" data-scroll data-options='{ "easing": "easeInOutQuad" }'>Quad</a></li>
+            <li><a href="#ease-in-out-cubic" data-scroll data-options='{ "easing": "easeInOutCubic" }'>Cubic</a></li>
+            <li><a href="#ease-in-out-quart" data-scroll data-options='{ "easing": "easeInOutQuart" }'>Quart</a></li>
+            <li><a href="#ease-in-out-quint" data-scroll data-options='{ "easing": "easeInOutQuint" }'>Quint</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ease-Out <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#ease-out-quad" data-scroll data-options='{ "easing": "easeOutQuad" }'>Quad</a></li>
+            <li><a href="#ease-out-cubic" data-scroll data-options='{ "easing": "easeOutCubic" }'>Cubic</a></li>
+            <li><a href="#ease-out-quart" data-scroll data-options='{ "easing": "easeOutQuart" }'>Quart</a></li>
+            <li><a href="#ease-out-quint" data-scroll data-options='{ "easing": "easeOutQuint" }'>Quint</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> Live Examples</a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://themesafari.net/themes/punjabi-app-landing-theme/" target="_blank">Punjabi App</a></li>
+            <li><a href="http://themesafari.net/themes/materialstrap-one-page-resume-theme/" target="_blank">MaterialStrap</a></li>
+            <li><a href="http://themesafari.net/themes/pizza-ghar-responsive-theme/" target="_blank">Pizza Ghar</a></li>
+          </ul>
+        </li>
+        <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><strong>Mirchu.net <i class="fa fa-angle-down"></i></strong></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http://www.mirchu.net/" target="_blank">Home</a></li>
+            <li><a href="http://www.mirchu.net/category/web/" target="_blank">Web</a></li>
+            <li><a href="http://www.mirchu.net/category/technology/" target="_blank">Technology</a></li>
+            <li><a href="http://www.mirchu.net/photos/" target="_blank">Mobiles</a></li>
+            <li><a href="http://www.mirchu.net/mobiles/" target="_blank">Photos</a></li>
+            <li><a href="http://www.mirchu.net/category/jobs/" target="_blank">Jobs</a></li>
+            
+            <li class="divider"></li>
+            <li><a href="http://www.mirchu.net/rook-bootstrap-app-landing-page/" target="_blank">Landing Page</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h1><span>Material Design</span> Smooth Scroll</h1>
+        <div class="action"> <a class="btn btn-default btn-lg download-btn" target="_blank" href="https://github.com/cferdinandi/smooth-scroll"> <i class="fa fa-download"></i>&nbsp;&nbsp;
+          Download v1.0.0 (ZIP) </a> </div>
+        <div class="creator">
+          <ul class="list-inline">
+            <li>Version 1.0.0</li>
+            <li><a href="#">GitHub Project</a></li>
+            <li><a href="http://www.mirchu.net/">Presented by Waqas Hussain</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="share-bar">
+  <div class="container">
+    <div class="row"> 
+    	<div class="col-sm-12 col-md-12">
+        <!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<ul class="list-inline">
+  <li><a class="a2a_button_facebook"></a></li>
+  <li><a class="a2a_button_twitter"></a></li>
+  <li><a class="a2a_button_google_plus"></a></li>
+  <li><a class="a2a_button_linkedin"></a></li>
+  <li><a class="a2a_dd" href="https://www.addtoany.com/share_save"></a></li>
+</ul>
+</div>
+<script type="text/javascript" src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
+        </div>
+    </div>
+  </div>
+</section>
+<section class="content section" id="getstarted">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 text-left">
+	
+      <h3>Getting Started</h3>
+	  <p>MD Performs a Smooth page Scroll to an anchor on the Same Page. To quickly and smoothly scroll the page to the destination content, but take a short time to do so. Nowadays mostly front-end developer make a landing page templates they need smooth scroll on page. They can use with 3 different easy effects.  </p>
+	  <br/>
+	  <h4>1: Include Smooth Scroll on your site</h4>
+	  <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>dist/js/smooth-scroll.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+	  <br/>
+	  <h4>2: Add the markup to your HTML</h4>
+	  <div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">data-scroll</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>#bazinga<span class="pl-pds">"</span></span>&gt;Anchor Link&lt;/<span class="pl-ent">a</span>&gt;
+<br/>
+&lt;<span class="pl-ent">span</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>bazinga<span class="pl-pds">"</span></span>&gt;Bazinga!&lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+	<br/>
+	  <h4>3: Initialize Smooth Scroll</h4>
+	  <div class="highlight highlight-html"><pre><span class="pl-s1">&lt;<span class="pl-ent">script</span>&gt;</span>
+<span class="pl-s1">    smoothScroll.init();</span>
+<span class="pl-s1">&lt;/<span class="pl-ent">script</span>&gt;</span></pre></div>
+
+<p>In the footer of your page, after the content, initialize Smooth Scroll. And that's it, you're done. Nice work!</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="linear">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Linear <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+
+<section class="section" id="ease-in-quad">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In - Quad <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-in-cubic">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In - Cubic <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-in-quart">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In - Quart <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-in-quint">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In - Quint <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+
+<section class="section" id="ease-in-out-quad">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In Out - Quad <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-in-out-cubic">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In Out - Cubic <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-in-out-quart">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In Out - Quart <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-in-out-quint">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease In Out - Quint <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+
+<section class="section" id="ease-out-quad">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease Out - Quad <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-out-cubic">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease Out - Cubic <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-out-quart">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease Out - Quart <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+      
+    </div>
+  </div>
+    </div>
+</section>
+<section class="section" id="ease-out-quint">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="valign-demo valign-wrapper">
+          <h2>Ease Out - Quint <span>Smooth Scroll</span></h2>
+	  <a href="#top" class="btn-top" data-scroll data-options='{ "easing": "linear" }'><i class="fa fa-angle-up"></i></a>
+        </div>
+      
+    </div>
+  </div>
+    </div>
+</section>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery-1.11.2.min.js"></script> 
+<!-- bootstrap --> 
+<script src="assets/plugins/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script src="assets/plugins/smoothscroll/smooth-scroll.js"></script>  
+<script src="assets/js/modernizr.js"></script> 
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
